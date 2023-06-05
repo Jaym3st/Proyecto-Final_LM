@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/responsive.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./tipo/">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container1">
+		<!-- /*-------------------------------------- TOPNAV --------------------------------------*/ -->
+		<div class="topnav">
+			<div class="logo">
+				<a href="../index.html"><img src="./img/logo.png" alt="logo" id="logo"></a>
+			</div>
+			<div class="lista" id="myTopnav">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="../index.html"><img id="cesta" src="./img/hogar.png" alt=""></a>
+				<a href="index.html"><img id="cesta" src="./img/info.png" alt=""></a>
+			</div>
+		</div>
+		<!-- /*-------------------------------------- TOPNAV --------------------------------------*/ -->
+		<div class="nav">
+			<div class="titulo">
+				<h1>Contacta <br> con nosotros</h1>
+			</div>
+			<div class="info">
+				<div class="izq">
+					<input type="text" class="input" id="nombre" placeholder="Nombre*" required>
+					<input type="text" class="input" id="empresa" placeholder="Empresa" required>
+					<input type="text" class="input" id="email" placeholder="Email*" required>
+				</div>
+				<div class="der">
+					<input type="text" class="input" id="apellido" placeholder="Apellidos*" required>
+					<input type="text" class="input" id="sector" placeholder="Sector">
+					<input type="number" class="input" id="Telefono" placeholder="Telefono">
+				</div>
+			</div>
+			<div class="poli">
+				<input type="checkbox" class="check" id="term1"> Acepto la política de protección de datos.*
+				<br>	
+				<input type="checkbox" class="check" id="term2"> Acepto recibir comunicaciones comerciales.
+				<br>
+			</div>
+			<div class="btn">
+				<button type="button" id="btn" onclick="relleno()">Enviar</button>
+			</div>
+		</div>
+
+		<!-- /*-------------------------------------- <- NAV, Ter-> --------------------------------------*/ -->
+		<!-- /*-------------------------------------- <- NAV, Ter-> --------------------------------------*/ -->
+
+		<div class="term">
+			<a href="" id="color4"><span>Políca de privacidad </span></a><a href="" id="color4"><span>Políca de cookies</span></a> <a href="" id="color4"><span>Términos y condiciones</span></a>
+			</div>
+	</div>
+	<script src="./js/main.js"></script>
+</body>
+</html>

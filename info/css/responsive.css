@@ -1,0 +1,57 @@
+@media screen and (max-width: 775px){
+	.topnav .lista a{
+		display: none;
+	}
+	.topnav .lista a.icon {
+		display: block;
+	}
+
+	.topnav .lista.responsive {
+		position: relative;
+	}
+
+	.topnav .lista.responsive .icon{	
+		top: 0;
+		right: 0;
+	}
+
+	.topnav .lista.responsive a{
+		display: block;
+	}
+
+	.topnav .search {
+		margin-left: -200px;
+	}
+
+	.container1 .info {
+		display: block;
+	}
+
+	.container1 .info .izq {
+		width: 100%;
+	}
+	.container1 .info .der {
+		width: 100%;
+	}
+
+	.info {
+		padding: 0px;
+	}
+	.info div{
+		width: 100%;
+	}
+	.info .input {
+		width: 100%;
+	}
+
+	/*-------------------------------------- HASTA AQUI EL TOPNAV --------------------------------------*/
+}
+
+@media screen and (max-width: 628px){
+
+	.topnav .search form{
+		display: none;
+	}
+
+	/*-------------------------------------- HASTA AQUI EL TOPNAV --------------------------------------*/
+}
