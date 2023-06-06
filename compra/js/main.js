@@ -14,29 +14,43 @@ function relleno(){
 	let apellido = document.getElementById("apellido").value;
 	let email = document.getElementById("email").value;
 	let tele = parseInt(document.getElementById("Telefono").value);
+	let direccion = document.getElementById("direccion").value;
+	let codigo = parseInt(document.getElementById("codigo").value);
+	let municipio = document.getElementById("municipio").value;
+	let provincia = document.getElementById("provincia").value;
 	let term1 = document.getElementById("term1");
 	let term2 = document.getElementById("term2");
 	var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
-
-	// if(term1.checked){
-	// 	alert("Gracias, contactaremos contigo lo antes posible");
-	// }
-	// else if (term1.checked && term2.checked) {
-
-	// }s
-
-	console.log(tele)
-	console.log(name)
-	if (!email.match(validRegex)){
-		alert("El email no es valido");
+	if (!name){
+		alert("Porfavor introducca el nombre");
 	}
-	else if (term1.checked && tele && name && apellido && email.match(validRegex)){
-		alert("Gracias, contactaremos contigo lo antes posible");
-	}	
+	else if (!apellido){
+		alert("Porfavor introducca el apellido");
+	}
+	else if(!email){
+		alert("Porfavor introducca el email");
+	}
+	else if(!email.match(validRegex)){
+		alert("El email no es válido, porfavor vuelva a introducirlo")
+	}
+	else if(!direccion){
+		alert("Porfavor introducca la direccion");
+	}
+	else if(!codigo){
+		alert("Porfavor introducca el codigo postal");
+	}
+	else if(!municipio){
+		alert("Porfavor introducca el municipio");
+	}
+	else if(!provincia){
+		alert("Porfavor introducca la provincia");
+	}
+	else if (!term1.checked){
+		alert("Debe de aceptar nuestra política de protección de datos");
+	}
 	else{
-		alert("No has aceptado las terminos o no has rellenado todos los campos obligatorios")
+		alert("Muchisimas gracias por su compra")
 	}
-
 }

@@ -19,14 +19,6 @@ function relleno(){
 	var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
-
-	// if(term1.checked){
-	// 	alert("Gracias, contactaremos contigo lo antes posible");
-	// }
-	// else if (term1.checked && term2.checked) {
-
-	// }s
-
 	console.log(tele)
 	console.log(name)
 	if (!email.match(validRegex)){
@@ -38,5 +30,4 @@ function relleno(){
 	else{
 		alert("No has aceptado las terminos o no has rellenado todos los campos obligatorios")
 	}
-
 }
